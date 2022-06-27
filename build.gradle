@@ -29,9 +29,12 @@ repositories{
 dependencies {
 
     implementation('org.springframework.boot:spring-boot-starter-web')
-
+    implementation('org.projectlombok:lombok')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
+
     //특정버전을 명시하지 않아야만 맨 위에 작성한 Classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersoin}")의 버전을 따라갈 수 있음
 //    Gradle버전을 확인해 보니 7 버전이더라구요.
 //    7버전에서는 compile, testComplie 대신 implementation, testImplementation을 사용해야 하는걸 이제야 알았습니다.
 }
+
+
